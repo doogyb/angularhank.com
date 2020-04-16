@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Angular Hank</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="navbar">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <div id="navbuttons">
+          <a href="#" class="w3-bar-item w3-button w3-padding-large">home</a>
+          <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">band</a>
+          <a href="#music" class="w3-bar-item w3-button w3-padding-large w3-hide-small">music</a>
+          <a href="#media" class="w3-bar-item w3-button w3-padding-large w3-hide-small">media</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">contact</a>
+
+          <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-padding-large w3-button" title="More">more <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+              <a href="#merch" class="w3-bar-item w3-button">Merchandise</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+      <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">band</a>
+      <a href="#music" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">tour</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">contact</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">merc</a>
+    </div>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+      <!-- Automatic Slideshow Images -->
+      <div class="mySlides w3-display-container w3-center">
+        <img src="/images/carousel/hank_brown.svg" style="width:50%">
+      </div>
+      <div class="mySlides w3-display-container w3-center">
+        <img src="/images/carousel/hank_red.svg" style="width:50%">
+      </div>
+      <div class="mySlides w3-display-container w3-center">
+        <img src="/images/carousel/hank_teal.svg" style="width:50%">
+      </div>
+
+      <!-- The Band Section -->
+      <div class="grey">
+        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+          <h2 class="w3-wide">angular hank</h2>
+          <p class="w3-justify">
+            Angular Hank is first and foremost 4 multi-instrumentalist
+            singer/songwriters in a shed making rock music together. Their
+            debut album ‘Brand New Angle’ gives the listener Punk, Country,
+            Rock and pop music throughout, with each writer showing a new angle
+            to Hank. The band does not conform to traditional roles of rock,
+            which states that there are frontmen and ‘backmen’. In fact they
+            are often seen arguing over the mic at shows. Listeners are not just
+            presented with 4 voices, but confronted by 4 personalities. The band
+            produced and recorded the entirety of their debut album and mixed
+            all but 3 tracks. This approach was taken to incite creativity and
+            to channel the shed-energy which which makes Mathieu, Samuel,
+            Ronan, Doc and inevitably the listener excited for their next show.
+            With ‘Brand New Angle’ only making up a fraction of their catalogue
+            the band gigged extensively through 2019, including being asked to
+            open for some of their favorite Irish acts such as Squarehead, The
+            Claque and Pillow Queens.
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-container w3-content w3-center" style="max-width:800px">
+        <div class="w3-row w3-padding-32">
+          <img src="/images/band/Hank_A.jpg" class="w3-round w3-margin-bottom" style="width:60%">
+          <img src="/images/band/Hank_B.jpg" class="w3-round w3-margin-bottom" style="width:60%">
+          <img src="/images/band/Hank_C.jpg" class="w3-round" style="width:60%">
+        </div>
+      </div>
+
+
+      <!-- The Music Section -->
+      <div class="grey" id="music">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+          <h2 class="w3-wide w3-center">music</h2>
+
+          <p class="w3-justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+
+          <div class="w3-row-padding w3-padding-16" style="margin:0 -16px">
+            <h4 class="w3-wide w3-center">brand new angle</h4>
+
+            <p class="w3-justify">
+              Our first album (Wazzzzzap)
+            </p>
+            <div class="w3-half w3-margin-bottom">
+              <div class="w3-container">
+                <img src="images/artwork/albums/brandnewangle/cover.jpg" class="w3-round" style="width:100%">
+              </div>
+            </div>
+            <div class="w3-half w3-margin-bottom w3-round">
+              <div class="w3-container">
+                <img src="images/artwork/albums/brandnewangle/back.jpg" class="w3-round" style="width:100%">
+              </div>
+            </div>
+          </div>
+          <div class="w3-center w3-container w3-round">
+            <iframe src="https://open.spotify.com/embed/album/4dgNJXh7At5tHOetxRknaz" class="w3-round" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
+
+          <div class="w3-row-padding w3-padding-16" style="margin:0 -16px">
+            <h4 class="w3-wide w3-center">singles</h4>
+
+            <p class="w3-justify">
+              I don't always like you
+            </p>
+            <div class="w3-half w3-container w3-round">
+              Soundcloud
+              <iframe width="100%" height="100%" scrolling="no" frameborder="no" allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/589208247&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>
+            <div class="w3-half w3-container w3-round">
+              Spotify
+              <iframe src="https://open.spotify.com/embed/album/4p5NEiUH7fja54WxzfWDyV" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+
+          </div>
+          <div class="w3-row-padding w3-padding-16" style="margin:0 -16px">
+
+            <p class="w3-justify">
+              Anna's Birthday
+            </p>
+            <div class="w3-half w3-container w3-round">
+              Soundcloud
+              <iframe width="100%" height="100%" scrolling="no" frameborder="no" allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/619004061&color=%23a7344f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>
+            <div class="w3-half w3-container w3-round">
+              Spotify
+              <iframe src="https://open.spotify.com/embed/album/0xq48gobCvcUrJUqGZNC6r" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+
+          </div>
+          <div class="w3-row-padding w3-padding-16" style="margin:0 -16px">
+
+            <p class="w3-justify">
+              <b>Fin Said</b>
+            </p>
+            <div class="w3-half w3-container w3-round">
+              Soundcloud
+              <iframe width="100%" height="100%" scrolling="no" frameborder="no" allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/589208247&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>
+            <div class="w3-half w3-container w3-round">
+              Spotify
+              <iframe src="https://open.spotify.com/embed/album/5BQBm78q8jaZ79WbdN9w0R" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+
+          </div>
+          <div class="w3-row-padding w3-padding-16" style="margin:0 -16px">
+
+            <p class="w3-justify">
+              <b>On Your Shoulder</b>
+            </p>
+            <div class="w3-half w3-container w3-round">
+              Soundcloud
+              <iframe width="100%" height="100%" scrolling="no" frameborder="no" allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/589208247&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>
+            <div class="w3-half w3-container w3-round">
+              Spotify
+              <iframe src="https://open.spotify.com/embed/album/6MFBkWvjPdtWUfsR4bVghz" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+
+          </div>
+          <div class="w3-row-padding w3-padding-16" style="margin:0 -16px">
+            <h4 class="w3-wide w3-center">singles</h4>
+            <div class="w3-half w3-margin-bottom">
+              <div class="w3-container">
+                <a href="spotify:album:5BQBm78q8jaZ79WbdN9w0R"><img src="images/artwork/singles/finsaid.jpg" class="w3-round" style="width:100%"></a>
+              </div>
+            </div>
+            <div class="w3-half w3-margin-bottom w3-round">
+              <div class="w3-container">
+                <a href="spotify:album:4p5NEiUH7fja54WxzfWDyV"><img src="images/artwork/singles/idontalwayslikeyou.png" class="w3-round" style="width:100%"></a>
+              </div>
+            </div>
+            <div class="w3-half w3-margin-bottom">
+              <div class="w3-container">
+                <a href="spotify:album:6MFBkWvjPdtWUfsR4bVghz"><img src="images/artwork/singles/onyourshoulder.jpg" class="w3-round" style="width:100%"></a>
+              </div>
+            </div>
+            <div class="w3-half w3-margin-bottom w3-round">
+              <div class="w3-container">
+                <a href="spotify:album:0xq48gobCvcUrJUqGZNC6r"><img src="images/artwork/singles/annasbirthday.jpg" class="w3-round" style="width:100%"></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- The Media Section -->
+    <div id="media">
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <h2 class="w3-wide w3-center">media</h2>
+
+        <p class="w3-justify w3-margin-bottom">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum.
+        </p>
+
+        <div class=" w3-center w3-container w3-round">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/CWg__wWhS7g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="w3-justify w3-margin-bottom">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum.
+        </p>
+        <div class=" w3-center w3-container w3-round">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/TxApl3M6enU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="grey" id="merch">
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <h2 class="w3-wide w3-center">merch</h2>
+        <div class="w3-row-padding w3-padding-16" style="margin:0 -16px; height: 400px">
+          <div class="w3-half w3-margin-bottom" style="height: 100%">
+            <a href="https://angularhank.bandcamp.com/releases">
+              <img src="images/merch/tshirt.png" class="w3-round merch" style="width:100%; height:100%">
+            </a>
+          </div>
+          <div class="w3-half w3-margin-bottom w3-round" style="height: 100%">
+            <a href="https://angularhank.bandcamp.com/releases">
+              <img src="images/merch/bag.png" class="w3-round merch" style="width:100%; height:100%">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- The Contact Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+      <h2 class="w3-wide w3-center">contact</h2>
+      <p class="w3-opacity w3-center"><i>Drop us a line...</i></p>
+      <div class="w3-row w3-padding-32">
+        <div class="w3-col m6 w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker" style="width:30px"></i>Dublin, Ireland<br>
+          <i class="fa fa-phone" style="width:30px"></i> Phone: +353 834236170<br>
+          <i class="fa fa-envelope" style="width:30px"> </i> Email: angularhank@gmail.com<br>
+        </div>
+        <div class="w3-col m6">
+          <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+              </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+            <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Page Content -->
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+      <a href="https://www.facebook.com/angularhank/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href="https://www.instagram.com/angularhank/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    </footer>
+
+    <script type="text/javascript" src="main.js"></script>
+
+  </body>
+
+</html>
