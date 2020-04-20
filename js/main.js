@@ -93,6 +93,7 @@ window.onclick = function(event) {
 paypal.Buttons({
   createOrder: function(data, actions) {
     // This function sets up the details of the transaction, including the amount and line item details.
+
     return actions.order.create({
       purchase_units: [{
         amount: {
@@ -115,3 +116,27 @@ document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.materialboxed');
   var instances = M.Materialbox.init(elems);
 });
+
+
+function demoLayout() {
+  const items = document.querySelectorAll('.masonry');
+
+  let timer = 100;
+  items.forEach(function(item) {
+    const min = 300;
+    const max = 400;
+    const height = Math.floor(Math.random() * (max - min + 1) + min);
+    item.style.width = height + 'px';
+
+  });
+}
+
+const fm = FlexMasonry.init('#grid', {
+  breakpointCols: {
+    'min-width: 576px': 3,
+    'min-width: 450px': 2,
+  },
+  numCols: 3
+});
+
+// demoLayout();

@@ -63,3 +63,17 @@ body {
     border-color: #3C4662;
     color: #ffffff;
 }
+
+.material-placeholder {
+  height: 100%;
+}
+
+.grid-item {
+  float: left;
+  width: 500px;
+  height: 400px;
+}
+
+img {
+  width: 100%;
+}
