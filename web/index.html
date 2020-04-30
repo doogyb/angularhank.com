@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Angular Hank</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures optimal rendering on mobile devices. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </head>
+
+
+
+  <body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="navbar">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <div id="navbuttons">
+          <a href="#" class="w3-bar-item w3-button w3-padding-large">home</a>
+          <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">band</a>
+          <a href="#music" class="w3-bar-item w3-button w3-padding-large w3-hide-small">music</a>
+          <a href="#media" class="w3-bar-item w3-button w3-padding-large w3-hide-small">media</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">contact</a>
+
+          <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-padding-large w3-button" title="More">more <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+              <a href="#merch" class="w3-bar-item w3-button">Merchandise</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+      <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">band</a>
+      <a href="#music" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">tour</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">contact</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">merc</a>
+    </div>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+      <!-- Automatic Slideshow Images -->
+      <div class="mySlides w3-display-container w3-center">
+        <img src="/images/carousel/hank_brown.svg" style="width:50%">
+      </div>
+      <div class="mySlides w3-display-container w3-center">
+        <img src="/images/carousel/hank_red.svg" style="width:50%">
+      </div>
+      <div class="mySlides w3-display-container w3-center">
+        <img src="/images/carousel/hank_teal.svg" style="width:50%">
+      </div>
+
+      <!-- The Band Section -->
+      <div class="hank-grey">
+        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+          <h2 class="w3-wide">angular hank</h2>
+          <p class="w3-justify">
+            Angular Hank is first and foremost 4 multi-instrumentalist
+            singer/songwriters in a shed making rock music together. Their
+            debut album ‘Brand New Angle’ gives the listener Punk, Country,
+            Rock and pop music throughout, with each writer showing a new angle
+            to Hank. The band does not conform to traditional roles of rock,
+            which states that there are frontmen and ‘backmen’. In fact they
+            are often seen arguing over the mic at shows. Listeners are not just
+            presented with 4 voices, but confronted by 4 personalities.
+          </p>
+        </div>
+      </div>
+
+      <!-- <div class="w3-container w3-content w3-center" style="max-width:800px">
+        <div class="w3-row w3-padding-32">
+          <img src="/images/band/Hank_A.jpg" class="w3-round w3-margin-bottom" style="width:60%">
+          <img src="/images/band/Hank_B.jpg" class="w3-round w3-margin-bottom" style="width:60%">
+          <img src="/images/band/Hank_C.jpg" class="w3-round" style="width:60%">
+        </div>
+      </div> -->
+      <div class="w3-center" style="padding-bottom: 32px;">
+        <div id="grid">
+          <div class="masonry"><img src="/images/band-compressed/Hank_A.jpg"></div>
+          <div class="masonry"><img src="/images/band-compressed/1315-3.jpg"></div>
+          <div class="masonry"><img src="/images/band-compressed/fb-cover-1.jpg"></div>
+          <div class="masonry"><img src="/images/band-compressed/Hank_C.jpg"></div>
+          <div class="masonry"><img src="/images/band-compressed/1417-2.jpg"></div>
+          <div class="masonry"><img src="/images/band-compressed/1255-2.jpg"></div>
+          <div class="masonry"><img src="/images/band-compressed/1296-2.jpg"></div>
+          <div class="masonry"><img src="/images/band-compressed/1314.jpg"></div>
+          <div class="masonry"><img src="/images/band-compressed/1345-2.jpg"></div>
+          <div class="masonry"><img src="/images/band-compressed/Hank_B.jpg"></div>
+
+        </div>
+      </div>
+
+
+      <!-- <div class="grid">
+        <div><img src="https://source.unsplash.com/t3DHojIo-08" alt=""></div>
+        <div><img src="https://source.unsplash.com/Imc-IoZDMXc" alt=""></div>
+        <div><img src="https://source.unsplash.com/SOZWHqeXcPQ" alt=""></div>
+        <div><img src="https://source.unsplash.com/bkdzvgBB7rQ" alt=""></div>
+        <div><img src="https://source.unsplash.com/Aruugw_rJCM" alt=""></div>
+      </div> -->
+
+
+      <!-- The Music Section -->
+      <div class="hank-grey" id="music">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+          <h2 class="w3-wide w3-center">music</h2>
+
+          <p class="w3-justify">
+            The band produced and recorded the entirety of their debut album and mixed
+            all but 3 tracks. This approach was taken to incite creativity and
+            to channel the shed-energy which which makes Mathieu, Samuel,
+            Ronan, Doc and inevitably the listener excited for their next show.
+            With ‘Brand New Angle’ only making up a fraction of their catalogue
+            the band gigged extensively through 2019, including being asked to
+            open for some of their favorite Irish acts such as Squarehead, The
+            Claque and Pillow Queens.
+          </p>
+
+          <div class="w3-row-padding w3-padding-16" style="margin:0 -16px">
+            <h4 class="w3-wide w3-center">brand new angle</h4>
+
+            <p class="w3-justify">
+              Our first album.
+            </p>
+            <div class="w3-half w3-margin-bottom">
+              <div class="w3-container">
+                <img src="images/artwork/albums/brandnewangle/cover.jpg" class="w3-round" style="width:100%">
+              </div>
+            </div>
+            <div class="w3-half w3-margin-bottom w3-round">
+              <div class="w3-container">
+                <img src="images/artwork/albums/brandnewangle/back.jpg" class="w3-round" style="width:100%">
+              </div>
+            </div>
+          </div>
+          <div class="w3-center w3-container w3-round">
+            <iframe src="https://open.spotify.com/embed/album/4dgNJXh7At5tHOetxRknaz" class="w3-round" width="100%" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
+
+          <div class="w3-row-padding w3-padding-16" style="margin:0 -16px">
+            <h4 class="w3-wide w3-center">singles</h4>
+            <div class="w3-half w3-margin-bottom">
+              <div class="w3-container">
+                <a href="https://open.spotify.com/album/5BQBm78q8jaZ79WbdN9w0R?si=Vp4jqAdlRQ2SwjVXAo8VwA" target="_blank"><img src="images/artwork/singles/finsaid.jpg" class="w3-round" style="width:100%"></a>
+              </div>
+            </div>
+            <div class="w3-half w3-margin-bottom w3-round">
+              <div class="w3-container">
+                <a href="https://open.spotify.com/album/4p5NEiUH7fja54WxzfWDyV?si=RtmovNL8QVKT9KQsN9p7Mw" target="_blank"><img src="images/artwork/singles/idontalwayslikeyou.png" class="w3-round" style="width:100%"></a>
+              </div>
+            </div>
+            <div class="w3-half w3-margin-bottom">
+              <div class="w3-container">
+                <a href="https://open.spotify.com/album/6MFBkWvjPdtWUfsR4bVghz?si=vljqmCcEQ-anAyvru8F7uA" target="_blank"><img src="images/artwork/singles/onyourshoulder.jpg" class="w3-round" style="width:100%"></a>
+              </div>
+            </div>
+            <div class="w3-half w3-margin-bottom w3-round">
+              <div class="w3-container">
+                <a href="https://open.spotify.com/album/0xq48gobCvcUrJUqGZNC6r?si=ZfeWjEdCQ7axx4GGPcjR-g" target="_blank"><img src="images/artwork/singles/annasbirthday.jpg" class="w3-round" style="width:100%"></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- The Media Section -->
+    <div id="media">
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <h2 class="w3-wide w3-center">media</h2>
+
+        <p class="w3-justify w3-margin-bottom">
+          Directed by Anna Heisterkamp, Fin Said combines energetic guitar riffs
+          and tumultuous pigeon-work to create a mirror image of sight and sound.
+          In the process the band befriended pigeon owners and pigeons alike
+          while being shown the ropes by master breeder Paul Keegan. We would
+          like to say that no animals were harmed in the making of this video,
+          but unfortunately not all of the birds/crew took a liking to Samuel -
+          pause at 1 minute & 32 seconds for an elaboration.
+        </p>
+
+        <div class=" w3-center w3-container w3-margin-bottom">
+          <iframe class="w3-round" width="80%%" height="315" src="https://www.youtube.com/embed/CWg__wWhS7g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="w3-justify w3-margin-bottom">
+          Angular Hank has a creative and DIY edict when it comes to gigging,
+          opting for alternative and creative spaces as well as standard Dublin
+          haunts wherever possible. In the early months of playing the band started
+          Folláin, a mixed media art event combining visual art, film and live
+          music which now occurs in less conventional art spaces all around
+          Dublin throughout the year. Some of their other more personal,
+          ‘sweatbox’ approach shows to date include a single launch in Studio 10
+          (pictured in black and white above), mixed media exhibitions in Jaja
+          Studios as well as the full gauntlets of kitchens and garages across Ireland.
+
+        </p>
+        <div class=" w3-center w3-container w3-round">
+          <iframe class="w3-round" width="80%%" height="315" src="https://www.youtube.com/embed/TxApl3M6enU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hank-grey" id="merch">
+      <div class="w3-container w3-content w3-padding-64" style="max-width:1000px">
+        <h2 class="w3-wide w3-center">merch</h2>
+        <div class="w3-row-padding w3-padding-16" style="margin:0 -16px; height: 400px">
+          <div class="w3-half w3-margin-bottom">
+            <img src="images/merch/tshirt.png" class="w3-round merch materialboxed" style="width:100%; height:100%">
+          </div>
+          <div class="w3-half w3-margin-bottom w3-round" style="height: 406px;">
+            <img src="images/merch/bag.png" class="w3-round merch materialboxed" style="width:100%; height:100%">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Section  -->
+
+    <!-- <div class="w3-row-padding w3-padding-16" style="margin:0 -16px">
+          <div class="w3-container w3-half w3-center" style="height:100">
+            <button onclick="addToCart('tshirt')" class="w3-button w3-round" style="background-color: #3C4662; color:white;">
+              Add to cart
+            </button>
+            <p>T-shirt sizes</p>
+            <div class="radio-toolbar" id="sizes">
+              <input type="radio" id="small" name="t-sizes" value="S">
+              <label for="small">S</label>
+
+              <input type="radio" id="medium" name="t-sizes" value="M" checked>
+              <label for="medium">M</label>
+
+              <input type="radio" id="large" name="t-sizes" value="L">
+              <label for="large">L</label>
+            </div>
+          </div>
+          <div class="w3-container w3-half w3-center">
+            <button onclick="addToCart('tote')" class="w3-button w3-round" style="background-color: #3C4662; color:white;">
+              Add to cart
+            </button>
+            <p>Tote Colour</p>
+            <div class="radio-toolbar" id="totes">
+              <input type="radio" id="black" name="tote-types" value="black">
+              <label for="black">Black</label>
+            </div>
+          </div>
+          <div class="w3-row-padding w3-padding-16" style="margin:0 -16px;">
+            <div class="w3-container w3-center">
+              <table class="table" style="width:90%; margin: auto;">
+                <thead class="thead-dark">
+                  <th>Item</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                </thead>
+                <tbody id="cart">
+                </tbody>
+              </table>
+              <div id="total">
+                Total: 0
+              </div>
+            </div>
+          </div>
+          <div class="w3-row-padding w3-padding-16" style="margin:0 -16px;">
+            <div class=" w3-container w3-center">
+              <div class="input-field">
+                <input placeholder="Please also include an EIRCODE" id="address" type="text" class="validate">
+                <label for="address">Address</label>
+              </div>
+            </div>
+          </div>
+          <div class="w3-row-padding w3-padding-16" style="margin:0 -16px;">
+            <div class=" w3-container w3-center">
+              <div id="paypal-button-container" style="width: 50%; margin: auto;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+    <!-- The Contact Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+      <h2 class="w3-wide w3-center">contact</h2>
+      <p class="w3-opacity w3-center"><i>Drop us a line...</i></p>
+      <div class="w3-row w3-padding-32">
+        <div class="w3-col m6 w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker" style="width:30px"></i>Dublin, Ireland<br>
+          <i class="fa fa-phone" style="width:30px"></i> Phone: +353 834236170<br>
+          <i class="fa fa-envelope" style="width:30px"> </i> Email: angularhank@gmail.com<br>
+        </div>
+        <div class="w3-col m6">
+          <form action="/hankbin/mail.py" target="_blank" method="get">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+              </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+            <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- End Page Content -->
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+      <a href="https://www.facebook.com/angularhank/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href="https://www.instagram.com/angularhank/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    </footer>
+
+    <link rel="stylesheet" href="https://unpkg.com/flexmasonry/dist/flexmasonry.css">
+    <script src="https://unpkg.com/flexmasonry/dist/flexmasonry.js"></script>
+    <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://www.paypal.com/sdk/js?currency=EUR&client-id=AU4budvMU-XkVNpkMKhmf9CpKyp6DmYrTW-02LBJIq9ZDgaO-BPLGI0IhTtNwq7O48e8zTdF8hmE6ZtK"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+  </body>
+
+</html>
